@@ -1,0 +1,168 @@
+*, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   transition: .5s ease-in-out;
+}
+body{
+   background-color: #9E9C9C;
+}
+   /* добавим плавность переходов для всех элементов страницы*/
+
+    /*  
+ 
+          container    
+
+ */
+ .container {
+   margin: 10 auto;
+   width: 100%;
+   max-width: 960px;
+   padding: 0 15px;
+}
+ .left-container {
+   margin-bottom: 30px;
+   width: 64%;
+   float: left;
+}
+
+
+
+/* левый контейнер */
+.posts-list {
+   margin-bottom: 30px;
+   width: 64%;
+   float: left;
+}
+.post {
+   margin-bottom: 35px;
+}
+.post-content p {
+   line-height: 1.5;
+   padding-bottom: 1em;
+}
+.post-image {
+   margin-bottom: 30px;
+   width: 50px;
+}
+.category {
+   margin-bottom: 15px;
+}
+.category a {
+   color: #F8B763;
+   text-transform: uppercase;
+}
+.post-title {
+   margin-bottom: 12px;
+   font-size: 26px;
+}
+
+/* правый контейнер */
+aside {
+   margin: 10px;
+   width: 33%;
+   float: right;
+}
+/* блок для виджетов */
+.widget {
+   padding: 20px 15px;
+   background: rgba(119, 119, 119, 0.356);
+   font-size: 13px;
+   margin-bottom: 30px;
+   box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+}
+.widget-title {
+   font-size: 18px;
+   padding: 10px;
+   margin-bottom: 20px;
+   text-align: center;
+   border: 2px solid #F8B763;
+   box-shadow: 3px 3px 0 0 #F8B763;
+}
+
+.widget-category-list li {
+   border-bottom: 1px solid #ebebe3ab;
+   padding: 10px 0;
+   color: #c6c6c6cb;
+   font-style: italic;
+}
+
+.widget-category-list li:last-child {
+   border-bottom: none;
+}
+
+.widget-category-list li a {
+   color: #353535;
+   margin-right: 6px;
+   font-style: normal;
+}
+/*
+.widget-category-list li a:before {
+   content: "\f105";
+   display: inline-block;
+   font-family: 'FontAwesome';
+   margin-right: 10px;
+   color: #c6c6c6;
+}
+
+
+ /*  
+ 
+              footer
+
+ */
+footer {
+   padding: 30px 0;
+   background: #3C3D41;
+   color: white;
+}
+.footer-col {
+   width: 100%;
+   float: center;
+}
+.footer-col a {
+   color: white;
+}
+.footer-col:last-child {
+   text-align: center;
+}
+.social-bar-wrap {
+   text-align: left;
+}
+.social-bar-wrap a {
+   padding: 0 7px;
+   font-size: 18px;
+}
+
+
+#imgAvatar{
+   width: 10%;
+   height: 10%;
+}
+/*               menu                  */
+/*               menu                  */
+/*               menu                  */
+/*               menu                  */
+/*               menu                  */
+.navigation {
+   list-style: none; /* Отключение отображения маркеров. */
+}
+.navigation li {
+   float: left; /* Выстраивание элементов списка в один ряд. */
+   margin-right: 1px; /* создание отступов для того, чтобы не сливались пункты меню. */
+   font-family: Verdana, Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
+   font-size: 14px; /* Размер текста в ссылках. */
+}
+.navigation li a {
+   display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+   padding: 15px 20px;  /* Внутри блочные отступы. */
+   background: #0db5b5; /* Цвет блоков меню. */
+   color: #3f3f3f; /* Цвет текста в блоках меню. */
+   text-decoration: none; /* Устранение подчёркивания ссылок. */
+   position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+}
+.navigation li a:hover {
+   background: #92d3d3; /* Цвет блока при наведении курсора. */
+   color: #6b6b6b;  /* Цвет текста при наведении курсора. */
+   
+}

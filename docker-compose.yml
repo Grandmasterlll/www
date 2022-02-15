@@ -1,0 +1,94 @@
+version: '3'
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+######### Services ###################################
+services:
+
+  # Server container
+  nginx:
+    build:
+      context: docker/nginx
+      dockerfile: Dockerfile
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/ssl:/etc/nginx/ssl
+      - ./docker/nginx/logs:/var/log/nginx
+      - ./docker/nginx/sites/:/etc/nginx/sites-available
+    ports:
+      - "${DOCKER_NGINX_PORT}:80"
+    depends_on:
+      - app
+    networks:
+      - frontend
+      - backend
+
+  # MySQL container
+  mysql:
+    build:
+      context: docker/mysql
+      args:
+        - MYSQL_VERSION=8.0
+    environment:
+      - MYSQL_DATABASE=site
+      - MYSQL_USER=server
+      - MYSQL_PASSWORD=5&tjHj
+      - MYSQL_ROOT_PASSWORD=2V5xK@t!  # MYSQL === PASSWORD 
+    volumes:
+      # Database volume
+      - ./mysql:/var/lib/mysql
+#      # Temp volume to allow using dumps
+#      - ./mysql/dumps/:/tmp/
+    ports:
+      - "${DOCKER_MYSQL_PORT}:3306"
+    networks:
+      - backend
+
+  # App FastCGI Process Manager container
+  app:
+    build:
+      context: docker/app
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www
+    environment:
+      # If you down want to use xDebug, set remote_enable=0
+      XDEBUG_CONFIG: "remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=Docker"
+    depends_on:
+      - mysql
+    networks:
+      - frontend
+      - backend
+
+    # phpMyAdmin container
+  phpmyadmin:
+    build: docker/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - MYSQL_USER=server
+      - MYSQL_PASSWORD=5&tjHj
+      - MYSQL_ROOT_PASSWORD=2V5xK@t!
+      - MAX_EXECUTION_TIME=600
+      - MEMORY_LIMIT=256M
+      - UPLOAD_LIMIT=2G
+    ports:
+      - "${DOCKER_PHP_MY_ADMIN_PORT}:80"
+    depends_on:
+      - mysql
+    networks:
+      - frontend
+      - backend
+
+######### Volumes ###################################
+volumes:
+  mysql:
+    driver: local
