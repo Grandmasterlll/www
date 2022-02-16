@@ -90,7 +90,8 @@ if (!$_SESSION['user']) {
             <ul>
                 <li><a href="regoboryd.php">Регистрация оборудования</a></li>
                 <li><a href="function2.php">Проверка оборудования</a></li>
-                <li><a href="#">Отчеты \ пометки </a></li>
+                <li><a href="Ofile.php">Отчеты \ пометки </a></li>
+               <!--<li><a href="#">Отчеты \ пометки </a></li> -->
             </ul>
             </li>
         <li><a href="exit.php">выход</a></li>
@@ -198,13 +199,18 @@ if (!$_SESSION['user']) {
                          id <br> <input type="text" id="chek" name="chek" value="" />
                     <br>Возникшие ошибки \ дефекты
                     <br>
-                    <textarea type="text" id="chek" name="chek" value="" ></textarea>
+                    <textarea type="text" id="chekt" name="chekt" value="" ></textarea>
                     <br>
                     <br>
                     <input type="submit" class="submit" value="Отправить" />
                     <br>
                     
+                    <?php
+                    $_SESSION['kol']=1;
+                    $_SESSION['check_data']=$today;
+
                     
+                    ?>
                     </form>
     </div>
 

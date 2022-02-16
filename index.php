@@ -186,7 +186,7 @@ nav li ul a:hover {
             <ul>
                 <li><a href="regoboryd.php">Регистрация оборудования</a></li>
                 <li><a href="function2.php">Проверка оборудования</a></li>
-                <li><a href="#">Отчеты \ пометки </a></li>
+                <li><a href="Ofile.php">Отчеты \ пометки </a></li>
             </ul>
             </li>
         <li><a href="exit.php">выход</a></li>
