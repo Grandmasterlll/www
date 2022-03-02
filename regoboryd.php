@@ -255,12 +255,7 @@ nav li ul a:hover {
     <div class="sc">
         <center>
 <h1> Регистрация оборудования  <!--   mesage add    -->
-    <?php
-            if ($_SESSION['messageadd']) {
-                echo '<p class="msg"> ' . $_SESSION['messageadd'] . ' </p>';
-            }
-            unset($_SESSION['messageadd']);
-        ?>  
+     
       </h1>
 </center>
 

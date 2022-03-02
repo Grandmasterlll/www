@@ -48,7 +48,10 @@ $stmt->execute($params);
 $connect=null;
 $stmt=null;
 $_SESSION['messageadd'] = 'проверка прошла успешно! id = '.$id_equipment;
-header('Location: ../function2.php');
+
+header('Location: ../action_mess.php');
+//header('Location: ../function2.php');
+
 /*
 */
 //$qery="SELECT `id`, `name`, `type`, `number`, `additional_information` FROM `equipment` ";

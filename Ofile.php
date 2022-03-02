@@ -63,7 +63,7 @@ if (!$_SESSION['user']) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Проверка оборудования</title>
+  <title>Отчеты</title>
   
   <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption"> -->
   <link rel="stylesheet"  href="./assets/css/style2.css">
@@ -194,8 +194,6 @@ if (!$_SESSION['user']) {
                     <td>'.$res['check_data'].'</td>
                     <td>'.$res['check_kol'].'</td>
                     <td>'.$res['check_inf'].'</td>
-
-                    
                     </tr>'
                     ;
                         
