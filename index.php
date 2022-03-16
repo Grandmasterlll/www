@@ -38,74 +38,12 @@ if (!$_SESSION['user']) {
   
   <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption"> -->
   <link rel="stylesheet"  href="assets/css/style.css">
+  <link rel="stylesheet"  href="./assets/css/style3.css">
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   
-  <style type="text/css">
-
-      .naviexit{
-    list-style: none;
-
-  }
-      .naviexit li{
-float: left; /* Выстраивание элементов списка в один ряд. */
-margin-right: 1px; /* создание отступов для того, чтобы не сливались пункты меню. */
-font-family: Verdana, Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
-font-size: 14px; /* Размер текста в ссылках. */
-}
-      .naviexit li a{
-display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
-padding: 5px 5px;  /* Внутри блочные отступы. */
-background: #0db5b5; /* Цвет блоков меню. */
-color: #3f3f3f; /* Цвет текста в блоках меню. */
-text-decoration: none; /* Устранение подчёркивания ссылок. */
-position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
-
-}
-     .naviexit li a:hover{
-background: #92d3d3; /* Цвет блока при наведении курсора. */
-color: #6b6b6b;  /* Цвет текста при наведении курсора. */
-}
-.cc{
-    width: 350px;
-    height: 90px;
-    padding: 0px;
-
-}
-.cv{
-    float: right;
-    padding: 10px;
-}
-.top-menu{
-    background-color: rgb(122, 122, 122);
-    width: auto ;
-    height: 70px;
-}
-.blockmenu{
-    
-    width: 350px;
-    height: 100px;
-    padding: 10px;
-}
-
-.cvv{
-    float: right;
-    padding: 10px;
-}
-.cvv {
- display: flex; 
-}
-
-.cvv  {
-  background-color: #f5f5f5;
-  padding: 20px;
-  width: 45%;
-  height: 20%;
-  margin: 0 auto;
- 
-}
-
-  </style>
+  
 </head>
 <body>
 
@@ -180,13 +118,17 @@ nav li ul a:hover {
 }
 
    </style>
+
+
 <ul class="cf">
         <li><a href="index.php">Главное меню</a></li>
         <li><a class="dropdown" href="#">Функции</a>
             <ul>
                 <li><a href="regoboryd.php">Регистрация оборудования</a></li>
                 <li><a href="function2.php">Проверка оборудования</a></li>
-                <li><a href="Ofile.php">Отчеты \ пометки </a></li>
+                <li><a href="O_file.php">Пометки </a></li>
+                <li><a href="equipment_overview.php">Оборудование</a></li>
+                <li><a href="reports.php">Отчеты  </a></li>
             </ul>
             </li>
         <li><a href="exit.php">выход</a></li>
@@ -226,6 +168,10 @@ nav li ul a:hover {
       
     </aside>
 -->
+
+    <div class="wrapper">  <!-- -----------------  wrapper  -------------------------- -->
+        <div class="content"> <!-- -----------------  content  -------------------------- -->
+
 <section>
     <style>
         .sc {
@@ -241,6 +187,7 @@ nav li ul a:hover {
 }
 
     </style>
+    
     <hr>
     <div class="sc">
         <center>
@@ -252,17 +199,47 @@ nav li ul a:hover {
     <hr>
     
     <div class="container">
+
+
+
+    <style>
+    .strblok {
+    
+    /* */
+    background: #f5f5f5;
+    width: 100%;
+    /* 
+    height: 80%;
+    */
+    
+    margin: 0 auto;
+    padding: 30px;
+    /* Поля */
+    /* Цвет фона */
+    /*border: 2px solid #E81E25;
+     Параметры рамки */
+}
+  </style>
+    <div class="strblok">
+      <h2>  Данные сотрудника данного сеанса <hr> </h2>
+    
     <img class="imgAvatar" src="<?=$scr?>"  width= "40%" height= "45%"; >
+    
     <div class="cvv">
+    
         <a >
+            
        Имя <?=$name?><br>
        Фамилия <?=$surname?><br>
        Должность <?=$post?><br>
-       Проведено проверок <?=$kol?>
+       <br>
+        
         </a>
         
+       
 
     </div>
+</div>
         <!-- 
         <aside>
             <div class="widget">
@@ -291,6 +268,9 @@ nav li ul a:hover {
     </div>
 </section>
 
+</div>  <!-- -----------------  content  -------------------------- -->
+ 
+<div class="footer"> <!-- -----------------  footer  -------------------------- -->
 <footer>
   <div class="container">
   	<div class="footer-col">
@@ -306,8 +286,9 @@ nav li ul a:hover {
   </div>
 </footer>
 
+</div> <!-- -----------------  footer  -------------------------- -->
 
-
+</div>  <!-- -----------------  wrapper  -------------------------- -->
 <script>
 $('.nav-toggle').on('click', function(){
 $('#menu').toggleClass('active');
@@ -319,3 +300,77 @@ $('#menu').toggleClass('active');
 
 </body>
 </html>
+
+
+
+
+
+<!--  
+
+<style type="text/css">
+
+      .naviexit{
+    list-style: none;
+
+  }
+      .naviexit li{
+float: left; /* Выстраивание элементов списка в один ряд. */
+margin-right: 1px; /* создание отступов для того, чтобы не сливались пункты меню. */
+font-family: Verdana, Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
+font-size: 14px; /* Размер текста в ссылках. */
+}
+      .naviexit li a{
+display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+padding: 5px 5px;  /* Внутри блочные отступы. */
+background: #0db5b5; /* Цвет блоков меню. */
+color: #3f3f3f; /* Цвет текста в блоках меню. */
+text-decoration: none; /* Устранение подчёркивания ссылок. */
+position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+
+}
+     .naviexit li a:hover{
+background: #92d3d3; /* Цвет блока при наведении курсора. */
+color: #6b6b6b;  /* Цвет текста при наведении курсора. */
+}
+.cc{
+    width: 350px;
+    height: 90px;
+    padding: 0px;
+
+}
+.cv{
+    float: right;
+    padding: 10px;
+}
+.top-menu{
+    background-color: rgb(122, 122, 122);
+    width: auto ;
+    height: 70px;
+}
+.blockmenu{
+    
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+}
+
+.cvv{
+    float: right;
+    padding: 10px;
+}
+.cvv {
+ display: flex; 
+}
+
+.cvv  {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 45%;
+  height: 20%;
+  margin: 0 auto;
+ 
+}
+
+  </style>
+
+-->

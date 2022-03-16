@@ -66,7 +66,7 @@ if (!$_SESSION['user']) {
   <title>Отчеты</title>
   
   <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption"> -->
-  <link rel="stylesheet"  href="./assets/css/style2.css">
+  <link rel="stylesheet"  href="./assets/css/style3.css">
   <link rel="stylesheet"  href="./assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -91,6 +91,7 @@ if (!$_SESSION['user']) {
                 <li><a href="regoboryd.php">Регистрация оборудования</a></li>
                 <li><a href="function2.php">Проверка оборудования</a></li>
                 <li><a href="Ofile.php">Отчеты \ пометки </a></li>
+                <li><a href="equipment_overview.php">Оборудование</a></li>
                <!--<li><a href="#">Отчеты \ пометки </a></li> -->
             </ul>
             </li>
@@ -104,7 +105,8 @@ if (!$_SESSION['user']) {
 </nav>
 
   </header>
- 
+  <div class="wrapper">   <!---------------------   wrapper   --------------------->
+  <div class="content">   <!---------------------   content   --------------------->
 <section>
     <!--
     <style>
@@ -217,22 +219,25 @@ if (!$_SESSION['user']) {
 
 </section>
 
+            </div>   <!---------------------   content   --------------------->
+          </div>   <!---------------------   wrapper   --------------------->
+          <div class="footer"> <!---------------------   footer   --------------------->
 <footer>
-  <div class="container">
-  	<div class="footer-col">
+<div class="container">
+  <div class="footer-col">
 <div class="social-bar-wrap">
-        <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
-      </div> 
+      <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div> 
+</div>
+  <div class="footer-col">
+   the project was made <br> by Valentin Drozdovich © 2022 
   </div>
-    <div class="footer-col">
-     the project was made <br> by Valentin Drozdovich © 2022 
-    </div>
-  </div>
+</div>
 </footer>
 
-
+</div>   <!---------------------   footer   --------------------->
 
 <script>
 $('.nav-toggle').on('click', function(){

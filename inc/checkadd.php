@@ -1,9 +1,14 @@
 <?php
-
-header("Content-Type: text/html; charset=UTF-8");
 session_start();
+header("Content-Type: text/html; charset=UTF-8");
 
 
+
+if (!$_SESSION['user']) {
+        header('Location: login.php');
+    }
+    
+    
 
 //
 ////////////////////////////////////
@@ -27,6 +32,8 @@ echo 'Подключение не удалось: ' . $e->getMessage();
 
 // SELECT * FROM `check`
 
+
+
 $query="INSERT INTO `check`(`id`, `id_equipment`, `check_data`, `check_kol`, `check_inf`) 
         VALUES (:id, :id_equipment, :check_data, :check_kol, :check_inf)";
 
@@ -34,7 +41,6 @@ $id_equipment = $_POST['chek'];
 $check_inf = $_POST['chekt'];
 $check_kol=$_SESSION['kol'];
 $check_data=$_SESSION['check_data'];
-
 $params = [
         ':id' => null,
         ':id_equipment'=>$id_equipment,
@@ -47,13 +53,38 @@ $stmt = $connect->prepare($query);
 $stmt->execute($params);
 $connect=null;
 $stmt=null;
+
+
+/////////////////////
+
+//-------------------------------------[]
+
+/*
+try{
+
+}
+catch( $as){
+
+}
+finally{
+
+}
+*/
+//-------------------------------------
+
 $_SESSION['messageadd'] = 'проверка прошла успешно! id = '.$id_equipment;
+//$_SESSION['global_mess'] ='qweqw';
+//$_SESSION['pathm']='Location: ../function2.php';
 
-header('Location: ../action_mess.php');
-//header('Location: ../function2.php');
+//header('Location: ../action_mess.php');
 
+header('Location: ../function2.php');
+
+//header('Location: ../inc/kol.php');
 /*
 */
 //$qery="SELECT `id`, `name`, `type`, `number`, `additional_information` FROM `equipment` ";
 //$result = $connect->prepare($qery);
 //$result->execute();
+
+?>

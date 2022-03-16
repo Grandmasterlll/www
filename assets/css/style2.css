@@ -1,67 +1,79 @@
-.naviexit{
+.naviexit {
     list-style: none;
+}
 
-  }
-      .naviexit li{
-float: left; /* Выстраивание элементов списка в один ряд. */
-margin-right: 1px; /* создание отступов для того, чтобы не сливались пункты меню. */
-font-family: Verdana, Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
-font-size: 14px; /* Размер текста в ссылках. */
+.naviexit li {
+    float: left;
+    /* Выстраивание элементов списка в один ряд. */
+    margin-right: 1px;
+    /* создание отступов для того, чтобы не сливались пункты меню. */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    /* Указание типа шрифта. */
+    font-size: 14px;
+    /* Размер текста в ссылках. */
 }
-      .naviexit li a{
-display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
-padding: 5px 5px;  /* Внутри блочные отступы. */
-background: #0db5b5; /* Цвет блоков меню. */
-color: #3f3f3f; /* Цвет текста в блоках меню. */
-text-decoration: none; /* Устранение подчёркивания ссылок. */
-position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
 
+.naviexit li a {
+    display: block;
+    /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+    padding: 5px 5px;
+    /* Внутри блочные отступы. */
+    background: #0db5b5;
+    /* Цвет блоков меню. */
+    color: #3f3f3f;
+    /* Цвет текста в блоках меню. */
+    text-decoration: none;
+    /* Устранение подчёркивания ссылок. */
+    position: relative;
+    /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
 }
-     .naviexit li a:hover{
-background: #92d3d3; /* Цвет блока при наведении курсора. */
-color: #6b6b6b;  /* Цвет текста при наведении курсора. */
+
+.naviexit li a:hover {
+    background: #92d3d3;
+    /* Цвет блока при наведении курсора. */
+    color: #6b6b6b;
+    /* Цвет текста при наведении курсора. */
 }
-.cc{
+
+.cc {
     width: 350px;
     height: 90px;
     padding: 0px;
-
 }
-.cv{
+
+.cv {
     float: right;
     padding: 10px;
 }
-.top-menu{
+
+.top-menu {
     background-color: rgb(122, 122, 122);
-    width: auto ;
+    width: auto;
     height: 70px;
 }
-.blockmenu{
-    
+
+.blockmenu {
     width: 350px;
     height: 100px;
     padding: 10px;
 }
 
-.cvv{
+.cvv {
     float: right;
     padding: 10px;
 }
+
 .cvv {
- display: flex; 
+    display: flex;
 }
 
-.cvv  {
-  background-color: #f5f5f5;
-  padding: 20px;
-  width: 45%;
-  height: 20%;
-  margin: 0 auto;
- 
+.cvv {
+    background-color: #f5f5f5;
+    padding: 20px;
+    width: 45%;
+    height: 20%;
+    margin: 0 auto;
 }
-
-
-
 
 nav ul {
     background: #ddd;
@@ -72,6 +84,7 @@ nav ul {
     text-align: center;
     width: 100%;
 }
+
 nav li {
     display: inline-block;
     margin: 0;
@@ -79,6 +92,7 @@ nav li {
     position: relative;
     min-width: 33%;
 }
+
 nav a {
     background: #ddd;
     color: #444;
@@ -88,17 +102,20 @@ nav a {
     text-align: center;
     text-decoration: none;
     -webkit-transition: all .25s ease;
-       -moz-transition: all .25s ease;
-        -ms-transition: all .25s ease;
-         -o-transition: all .25s ease;
-            transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
 }
+
 nav .dropdown:after {
     content: ' \25bc';
 }
+
 nav li:hover a {
     background: #ccc;
 }
+
 nav li ul {
     left: 0;
     opacity: 0;
@@ -107,160 +124,209 @@ nav li ul {
     visibility: hidden;
     z-index: 1;
     -webkit-transition: all .25s ease;
-       -moz-transition: all .25s ease;
-        -ms-transition: all .25s ease;
-         -o-transition: all .25s ease;
-            transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
 }
+
 nav li:hover ul {
     opacity: 1;
     top: 50px;
     visibility: visible;
 }
+
 nav li ul li {
     width: 100%;
 }
+
 nav li ul a:hover {
     background: #bbb;
 }
 
+.container2 {}
 
-
-.container2{
-
-}
 .sc {
-display: flex; 
+    display: flex;
 }
 
-.sc  {
-background-color: #f5f5f5;
-padding: 20px;
-max-width: 100%;
-margin: 0 auto;
-
-
+.sc {
+    background-color: #f5f5f5;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.bv{
-background-color: #bdbdbd;
-padding: 10px;
-width: 100%;
-height: 112%;
-/* float: left; */
-
-
+.bv {
+    background-color: #bdbdbd;
+    padding: 10px;
+    width: 100%;
+    height: 112%;
+    /* float: left; */
 }
 
 input {
-	width: 300px;
-	font-size: 13px;
-	padding: 6px 0 4px 10px;
-	border: 1px solid #cecece;
-	background: #F6F6f6;
-	border-radius: 8px;
+    width: 300px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
 }
+
 input {
-	padding-bottom: 5px\0;
+    padding-bottom: 5px\0;
 }
-.class1{
-    padding: 6px 0 6px 6px ;
-   
+
+.class1 {
+    padding: 6px 0 6px 6px;
     margin-right: 1px;
-    font-family: Verdana, Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
-font-size: 17px; /* Размер текста в ссылках. */
-
-
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    /* Указание типа шрифта. */
+    font-size: 17px;
+    /* Размер текста в ссылках. */
 }
+
 textarea {
-	/* = Убираем скролл */
-	overflow: auto;
-
-	/* = Убираем увеличение */
-	resize: none;
-	width: 850px;
-	height: 120px;
-
-	/* = Добавим фон, рамку, отступ*/
-	background: #f6f6f6;
-	border: 1px solid #cecece;
-	border-radius: 8px 0 0 0;
-	padding: 8px 0 8px 10px;
+    /* = Убираем скролл */
+    overflow: auto;
+    /* = Убираем увеличение */
+    resize: none;
+    width: 850px;
+    height: 120px;
+    /* = Добавим фон, рамку, отступ*/
+    background: #f6f6f6;
+    border: 1px solid #cecece;
+    border-radius: 8px 0 0 0;
+    padding: 8px 0 8px 10px;
 }
+
 .submit {
-	cursor: pointer;
-	border: 1px solid #cecece;
-	background: #f6f6f6;
-	box-shadow: inset 0px 20px 20px #ffffff;
-	border-radius: 8px;
-	padding: 8px 14px;
-	width: 120px;
+    cursor: pointer;
+    border: 1px solid #cecece;
+    background: #f6f6f6;
+    box-shadow: inset 0px 20px 20px #ffffff;
+    border-radius: 8px;
+    padding: 8px 14px;
+    width: 120px;
 }
+
 .submit:hover {
-	box-shadow: inset 0px -20px 20px #ffffff;
+    box-shadow: inset 0px -20px 20px #ffffff;
 }
+
 .submit:active {
-	margin-top: 1px;
-	margin-bottom: -1px;
-	zoom: 1;
+    margin-top: 1px;
+    margin-bottom: -1px;
+    zoom: 1;
 }
+
 .table {
-	width: 100%;
-	margin-bottom: 20px;
-	border: 5px solid #fff;
-	border-top: 5px solid #fff;
-	border-bottom: 3px solid #fff;
-	border-collapse: collapse; 
-	outline: 3px solid #ffd300;
-	font-size: 15px;
-	background: #fff!important;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-collapse: collapse;
+    outline: 3px solid #ffd300;
+    font-size: 15px;
+    background: #fff!important;
 }
+
 .table th {
-	font-weight: bold;
-	padding: 7px;
-	background: #ffd300;
-	border: none;
-	text-align: left;
-	font-size: 15px;
-	border-top: 3px solid #fff;
-	border-bottom: 3px solid #ffd300;
+    font-weight: bold;
+    padding: 7px;
+    background: #ffd300;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #ffd300;
 }
+
 .table td {
-	padding: 7px;
-	border: none;
-	border-top: 3px solid #fff;
-	border-bottom: 3px solid #fff;
-	font-size: 15px;
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
 }
-.table tbody tr:nth-child(even){
-	background: #f8f8f8!important;
+
+.table tbody tr:nth-child(even) {
+    background: #f8f8f8!important;
 }
 
 footer {
+    /*
     padding: 30px 0;
     background: #3C3D41;
     color: white;
- }
- .footer-col {
+
+*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.footer-col {
     width: 100%;
     float: center;
- }
- .footer-col a {
+}
+
+.footer-col a {
     color: white;
- }
- .footer-col:last-child {
+}
+
+.footer-col:last-child {
     text-align: center;
- }
- .social-bar-wrap {
+}
+
+.social-bar-wrap {
     text-align: left;
- }
- .social-bar-wrap a {
+}
+
+.social-bar-wrap a {
     padding: 0 7px;
     font-size: 18px;
- }
- 
- 
- #imgAvatar{
+}
+
+#imgAvatar {
     width: 10%;
     height: 10%;
- }
+}
+
+
+/*
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+*/
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.content {
+    padding-bottom: 90px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}

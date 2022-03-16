@@ -1,10 +1,18 @@
 
 <?php
-
-header("Content-Type: text/html; charset=UTF-8");
 session_start();
+header("Content-Type: text/html; charset=UTF-8");
+
+echo 'error_log <br>';
+echo error_log();
+//print (error_log());
+   echo 'log <br>';
+   
+   print(session_id()) ;
+   echo $_SESSION['global_mess'];
+   error_log();
 /*
-//require_once 'connect.php';
+//require_once 'connect.php'; session_start();
 
 //
 ////////////////////////////////////
@@ -60,7 +68,7 @@ if (!$_SESSION['user']) {
  */
  ?>
 
-
+<!--
 <html>
 
 <head>
@@ -73,8 +81,10 @@ if (!$_SESSION['user']) {
         Bootstrap core CSS 
 <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     -->
+    <!--
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption"> -->
+  <!--
   <link rel="stylesheet"  href="./assets/css/style2.css">
   <link rel="stylesheet"  href="./assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -87,7 +97,7 @@ if (!$_SESSION['user']) {
 
 <!-- 
 верхняя  header 
- -->
+ --><!--
 	<header>
    
 
@@ -101,7 +111,7 @@ if (!$_SESSION['user']) {
                 <li><a href="function2.php">Проверка оборудования</a></li>
                 <li><a href="Ofile.php">Отчеты \ пометки </a></li>
                <!--<li><a href="#">Отчеты \ пометки </a></li> -->
-            </ul>
+         <!--   </ul>
             </li>
         <li><a href="exit.php">выход</a></li>
     </ul>
@@ -144,6 +154,7 @@ if (!$_SESSION['user']) {
 
     </style>
 -->
+<!--
 <style>
     .scs  {
  /* background-color: #f5f5f5;
@@ -162,7 +173,7 @@ if (!$_SESSION['user']) {
             <center>
                     <h1> 
                         Сообщение   <!--   mesage add    -->
-                    </h1>
+        <!--            </h1>
             </center>
         
     </div>
@@ -177,21 +188,35 @@ if (!$_SESSION['user']) {
     <hr>
     <br>
     <?php
-    
-            if ($_SESSION['messageadd']) {
-                echo '<p class="msg"> ' . $_SESSION['messageadd'] . ' </p>';
+    /*
+     echo 'error_log <br>';
+     echo error_log();
+     //print (error_log());
+        echo 'log <br>';
+        
+        print(session_id()) ;
+        echo $_SESSION['global_mess'];
+            echo '= '.$_SESSION['global_mess'];
+            if ($_SESSION['global_mess']) {
+                echo '<p class="msg"> ' . $_SESSION['global_mess'] . ' </p>';
             }
-            unset($_SESSION['messageadd']);
+            unset($_SESSION['global_mess']);
+            */
         ?> 
         <hr>
         <br>
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <div class="text-end">
-                <a type="button" class="btn btn-warning" href="action_next.php">Далее</a>
+                <form action="action_next.php" >
+                <button type="button" class="btn btn-warning">Далее</button>
+                
+                </form>
+                
             </div>
         </div>
         
         <!--
+            <a type="button" class="btn btn-warning" >Далее</a>
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <div class="text-end">
                 <form action="">
@@ -200,7 +225,7 @@ if (!$_SESSION['user']) {
             </div>
         </div>
         -->
-    
+    <!--
     </div>
 
 

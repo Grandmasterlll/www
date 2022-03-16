@@ -1,0 +1,337 @@
+
+                    id [1]
+                    id_equipment [1]  
+                    check_data [2022-02-16] 
+                    check_kol [1] 
+                    check_inf [---]
+                    
+                    
+                    id [2]
+                    id_equipment [1]  
+                    check_data [2022-02-16] 
+                    check_kol [1] 
+                    check_inf [1]
+                    
+                    
+                    id [3]
+                    id_equipment [2]  
+                    check_data [2022-02-16] 
+                    check_kol [1] 
+                    check_inf [1]
+                    
+                    
+                    id [4]
+                    id_equipment [2]  
+                    check_data [2022-02-16] 
+                    check_kol [1] 
+                    check_inf [---]
+                    
+                    
+                    id [5]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [12345]
+                    
+                    
+                    id [6]
+                    id_equipment [1]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [1]
+                    
+                    
+                    id [7]
+                    id_equipment [1]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [8]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [9]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [10]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [1]
+                    
+                    
+                    id [11]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [12]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [13]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [14]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [15]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [16]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [17]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [18]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf []
+                    
+                    
+                    id [19]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [20]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [21]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [22]
+                    id_equipment [1]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [qwe]
+                    
+                    
+                    id [23]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [24]
+                    id_equipment [2]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [2]
+                    
+                    
+                    id [25]
+                    id_equipment [4]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [26]
+                    id_equipment [4]  
+                    check_data [] 
+                    check_kol [] 
+                    check_inf [asdrfgfh]
+                    
+                    
+                    id [27]
+                    id_equipment [3]  
+                    check_data [2022-03-02] 
+                    check_kol [1] 
+                    check_inf [qqq]
+                    
+                    
+                    id [28]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [124]
+                    
+                    
+                    id [29]
+                    id_equipment [1]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [30]
+                    id_equipment [1]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [30]
+                    
+                    
+                    id [31]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [123]
+                    
+                    
+                    id [32]
+                    id_equipment [5]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [33]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [245]
+                    
+                    
+                    id [34]
+                    id_equipment [1]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [1]
+                    
+                    
+                    id [35]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [36]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [37]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [38]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [39]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [23]
+                    
+                    
+                    id [40]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [23]
+                    
+                    
+                    id [41]
+                    id_equipment [2]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [234]
+                    
+                    
+                    id [42]
+                    id_equipment [2]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [2423]
+                    
+                    
+                    id [43]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [3442]
+                    
+                    
+                    id [44]
+                    id_equipment [4]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [3442]
+                    
+                    
+                    id [45]
+                    id_equipment [5]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [111]
+                    
+                    
+                    id [46]
+                    id_equipment [5]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [222]
+                    
+                    
+                    id [47]
+                    id_equipment [5]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [12345]
+                    
+                    
+                    id [48]
+                    id_equipment [3]  
+                    check_data [2022-03-04] 
+                    check_kol [1] 
+                    check_inf [123454]
+                    
+                    

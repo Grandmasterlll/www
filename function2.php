@@ -48,13 +48,18 @@ if (!$_SESSION['user']) {
  if($kol===null){
      $kol=0;
  }
+ $id_=array_column($_SESSION['user'], 'id');
 
 
  
  
  $today = date("Y-m-d H:i:s");
-
-
+/*
+ //$_SESSION['add_unit']=1;
+ if ($_SESSION['add_unit']){
+  require_once 'inc/kol.php';
+ }
+ */
  ?>
 
 
@@ -66,7 +71,7 @@ if (!$_SESSION['user']) {
   <title>Проверка оборудования</title>
   
   <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption"> -->
-  <link rel="stylesheet"  href="./assets/css/style2.css">
+  <link rel="stylesheet"  href="./assets/css/style3.css">
   <link rel="stylesheet"  href="./assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -90,7 +95,9 @@ if (!$_SESSION['user']) {
             <ul>
                 <li><a href="regoboryd.php">Регистрация оборудования</a></li>
                 <li><a href="function2.php">Проверка оборудования</a></li>
-                <li><a href="Ofile.php">Отчеты \ пометки </a></li>
+                <li><a href="O_file.php">Пометки </a></li>
+                <li><a href="equipment_overview.php">Оборудование</a></li>
+                <li><a href="reports.php">Отчеты  </a></li>
                <!--<li><a href="#">Отчеты \ пометки </a></li> -->
             </ul>
             </li>
@@ -104,7 +111,8 @@ if (!$_SESSION['user']) {
 </nav>
 
   </header>
- 
+  <div class="wrapper">  <!---------------------   wrapper   --------------------->
+  <div class="content"> <!---------------------   content   --------------------->
 <section>
     <!--
     <style>
@@ -151,6 +159,7 @@ if (!$_SESSION['user']) {
     <div class="sc">
         <center>
 <h1> Проверка оборудования  <!--   mesage add    -->
+<br>
     <?php
             if ($_SESSION['messageadd']) {
                 echo '<p class="msg"> ' . $_SESSION['messageadd'] . ' </p>';
@@ -295,6 +304,10 @@ if (!$_SESSION['user']) {
 
 </section>
 
+            </div> <!---------------------   content   --------------------->
+
+          <div class="footer"> <!---------------------   footer   --------------------->
+
 <footer>
   <div class="container">
   	<div class="footer-col">
@@ -310,7 +323,9 @@ if (!$_SESSION['user']) {
   </div>
 </footer>
 
+        </div> <!---------------------   footer   --------------------->
 
+        </div> <!---------------------   wrapper   --------------------->
 
 <script>
 $('.nav-toggle').on('click', function(){
